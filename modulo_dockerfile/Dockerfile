@@ -22,3 +22,9 @@ COPY copy.txt copy.txt
 #ou passar arquivo por url
 ADD add.tar.gz ./
 ADD https://api.github.com/users/ohrafaelmartins ohrafaelmartins.json
+
+RUN adduser --disabled-password rafael
+
+USER rafael
+
+EXPOSE 9090
