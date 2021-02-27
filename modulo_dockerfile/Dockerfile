@@ -7,6 +7,8 @@ LABEL APP_VERSION="1.0.0"
 #ENV chave e valor
 ENV NPM_VERSION=8 ENVIRONMENT=PROD
 
+VOLUME [ "/data" ]
+
 RUN apk add --no-cache git nano npm
 
 WORKDIR /usr/share/myapp
