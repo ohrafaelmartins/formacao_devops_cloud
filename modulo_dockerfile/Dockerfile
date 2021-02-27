@@ -1,5 +1,12 @@
 FROM alpine
 
+#LABEL chave e valor
+LABEL MAINTAINER="Rafael Martins <<rafaelmartins@025@outlook.com>>"
+LABEL APP_VERSION="1.0.0"
+
+#ENV chave e valor
+ENV NPM_VERSION=8 ENVIRONMENT=PROD
+
 RUN apk add --no-cache git nano npm
 
 WORKDIR /usr/share/myapp
