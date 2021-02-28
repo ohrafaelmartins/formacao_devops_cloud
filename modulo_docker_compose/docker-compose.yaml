@@ -9,6 +9,8 @@ services:
       MYSQL_PASSWORD: wordpress
     volumes:
       - db:/var/lib/mysql
+    networks:
+      - stack_web
 
   wordpress:
     image: wordpress
@@ -24,7 +26,12 @@ services:
     depends_on:
       - db
     restart: on-failure
+    networks:
+      - stack_web
 
 volumes:
   db:
   wordpress:
+
+networks:
+  stack_web:
