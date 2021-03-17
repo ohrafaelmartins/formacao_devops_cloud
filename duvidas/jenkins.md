@@ -1,0 +1,1 @@
+- Há como criar um node que seja instanciado apenas quando for usar? (ligar/usar/desligar a ec2)
