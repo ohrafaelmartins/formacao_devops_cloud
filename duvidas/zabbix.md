@@ -1,0 +1,1 @@
+- monitorar um disco montado -> tentar montar > enviar um alerta
